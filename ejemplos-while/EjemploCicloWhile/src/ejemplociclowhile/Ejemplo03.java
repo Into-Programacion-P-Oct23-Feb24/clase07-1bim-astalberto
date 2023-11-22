@@ -25,7 +25,7 @@ public class Ejemplo03 {
         int contador = 1;
         int suma = 0;
         int valor_ingresado;
-        
+      // Suma 5 numeros ingresados por el usuario y se presenta los numeros ingresados por el usuario y la suma total de los numeros ingresados
         while (contador <= limite) { 
             System.out.println("Ingrese el valor a sumar");
             valor_ingresado = entrada.nextInt();
