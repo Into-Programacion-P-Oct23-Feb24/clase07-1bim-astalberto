@@ -23,7 +23,10 @@ public class Ejemplo04 {
               //   10     >=   10            and   10  <=     20
               //          V                 and     V
               //                            V
-              //    
+              //   10 >= 10  && 10<=20
+              //   15 >= 10  && 15<=20
+              //   20 >= 10  && 20<=20
+              //   25 >= 10  && 25<=20
         while (contador >= limite_inferior && contador <= limite_superior){
             suma = suma + contador;
             System.out.printf("Contador %d\n", contador);

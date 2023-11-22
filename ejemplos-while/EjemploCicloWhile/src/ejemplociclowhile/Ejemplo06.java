@@ -26,11 +26,12 @@ public class Ejemplo06 {
         double suma_total = 0;
         double calificacion;
         boolean bandera = true;
-
+        int contador = 0;
+        double promedio = 0;
         System.out.println("Ingrese las notas de los estudiantes de su materia");
         // true 
         // while (bandera) {
-        while(bandera==true){
+        while (bandera == true) {
             System.out.println("Ingrese calificación");
             calificacion = entrada.nextDouble();
 
@@ -46,9 +47,11 @@ public class Ejemplo06 {
             if (temporal == -1) {
                 bandera = false;
             }
+            contador = contador + 1;
         }
-
-        System.out.printf("Suma de calificaciones es %.2f\n", suma_total);
+        promedio = suma_total / contador;
+        System.out.printf("Suma de calificaciones es %.2f\nEl promedio es: %.2f\n"
+                , suma_total,promedio);
 
     }
 }
